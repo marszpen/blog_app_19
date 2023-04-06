@@ -1,5 +1,7 @@
+import postsReducer from "./postsRedux";
+
 const initialState = {
-    posts: [],
+    posts: postsReducer,
 };
 
 export default initialState; 
