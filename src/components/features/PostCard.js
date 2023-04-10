@@ -1,3 +1,4 @@
+import {Card, Button } from 'react-bootstrap';
 const PostCard = () => {
     return (
         <Card>
@@ -8,8 +9,8 @@ const PostCard = () => {
                 </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
             </Card.Body>
-        </Card> >
-    )
+        </Card> 
+    );
 }; 
 
 export default PostCard;
