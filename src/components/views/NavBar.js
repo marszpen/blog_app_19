@@ -1,5 +1,5 @@
 import {NavLink} from 'react-router-dom';
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 
 const NavBar = () => {
     <Navbar bg="primary" variant="dark" expand="lg"

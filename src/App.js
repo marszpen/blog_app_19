@@ -6,7 +6,7 @@ import PostEdit from './components/pages/PostEdit';
 import About from './components/pages/About';
 import NotFound from './components/pages/NotFound';
 import Header from './components/views/Header';
-import Footer from '//components/views/Footer';
+import Footer from './components/views/Footer';
 import { Container } from 'react-bootstrap'
 
 const App = () => {
