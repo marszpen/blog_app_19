@@ -1,19 +1,17 @@
-import PostCard from '../features/PostCard';
+import Posts from '../features/Posts';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
-import { useSelector } from 'react-redux';
-import { getAllPosts } from '../../redux/store';
-
 
 const Home = () => {
-    const posts = useSelector((state) => getAllPosts)
     return(
-    <div>
+    <div className="flex-md-row">
         <h1>All posts</h1>
-        <Link to='/post/add'>
-            <Button variant='primary'>Add post</Button>
+        <Link to='/post/add' className="d-flex flex-row-reverse">
+            <Button variant='outline-info'>Add post</Button>
         </Link>
-        <PostCard />
+        <div className="mt-5">
+        <Posts />
+        </div>
     </div>
 )};
 

@@ -16,7 +16,7 @@ const initialState = {
       shortDescription: 'Short description of the article...',
       content: 'Main content of the article',
       publishedDate: '18-02-2024',
-      author: 'MMrilyn Monroe'
+      author: 'Marilyn Monroe'
         },
         {
       id: '3',

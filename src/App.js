@@ -11,8 +11,9 @@ import { Container } from 'react-bootstrap'
 
 const App = () => {
   return (
-    <Container>
+    <div>
       <Header />
+      <Container>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/post/:id" element={<SinglePost />} />
@@ -23,6 +24,7 @@ const App = () => {
       </Routes>
       <Footer />
     </Container>
+    </div>
   );
 };
 
