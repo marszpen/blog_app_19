@@ -1,6 +1,12 @@
 import { Button, Modal } from 'react-bootstrap';
 
-function Modal(props) {
+const ModalForm = (props) => {
+  <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    ></Modal>
   return (
     <Modal.Dialog>
       <Modal.Header closeButton>
@@ -17,6 +23,6 @@ function Modal(props) {
       </Modal.Footer>
     </Modal.Dialog>
   );
-}
+  };
 
-export default Modal;
+export default ModalForm;

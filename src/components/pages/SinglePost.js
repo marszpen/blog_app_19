@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { getPostById } from "../../redux/postsRedux";
 import { Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Modal from "../features/Modal";
+import ModalForm from "../features/ModalForm";
 import { useState } from "react";
 import { Navigate } from "react-router-dom";
 import { removePost } from "../../redux/postsRedux";
@@ -21,7 +21,7 @@ const SinglePost = (props) => {
         setModal(false);
   }
     if (modal) {
-      return <Modal show={modal} closeModal={closeModal} deletePost={deletePost}/>;
+      return <ModalForm show={modal} closeModal={closeModal} deletePost={deletePost}/>;
     }
     if (!postContent) {
         return <Navigate to="/" />;
