@@ -20,6 +20,9 @@ const AddPostForm = (props) => {
     dispatch(
       addPost({ title, author, publishedDate, shortDescription, content })
     );
+    navigate('/');
+    }
+
     return (
       <>
         <Row className="justify-content-md-center">
@@ -60,6 +63,6 @@ const AddPostForm = (props) => {
       </>
     );
 };
-}
+
 
 export default AddPostForm;

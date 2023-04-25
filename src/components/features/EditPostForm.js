@@ -1,4 +1,4 @@
-import PostForm from "../PostForm/PostForm";
+import AddPostForm from '../AddPostForm'
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { editPost, getPostById } from "../../../redux/postsRedux";
@@ -24,7 +24,7 @@ const EditPostForm = () => {
   } else {
     return (
       <>
-        <PostForm
+        <AddPostForm
           action={handleSubmit}
           actionText={"Edit Post"}
           title={editedPostContent.title}
