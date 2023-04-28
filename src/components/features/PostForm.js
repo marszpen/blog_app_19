@@ -56,7 +56,7 @@ const PostForm = ({ action, actionText, ...props }) => {
                       placeholder="Enter date"
                       required
                       onChange={(e) =>
-                        setPublishedDate((e.target.value, "yyyy-mm-dd"))
+                        setPublishedDate(e.target.value)
                       }
                       value={publishedDate}
                     />

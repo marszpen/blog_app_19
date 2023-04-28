@@ -1,4 +1,3 @@
-import postsReducer from "./postsRedux";
 
 const initialState = {
     posts:[

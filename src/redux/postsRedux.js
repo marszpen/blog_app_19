@@ -3,7 +3,7 @@ export const getAllPosts = (state) => state.posts;
 export const getPostById = ({ posts }, id) => posts.find(post => post.id === id);
 
 // actions
-const createActionName = actionName => 'app/posts/${actionName}';
+const createActionName = actionName => `app/posts/${actionName}`;
 const ADD_POST = createActionName("ADD_POST");
 const EDIT_POST = createActionName("EDIT_POST");
 const REMOVE_POST = createActionName("REMOVE_POST");
