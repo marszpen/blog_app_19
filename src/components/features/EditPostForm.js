@@ -1,4 +1,4 @@
-import AddPostForm from '../AddPostForm'
+import PostForm from '../PostForm'
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { editPost, getPostById } from "../../../redux/postsRedux";
@@ -15,7 +15,7 @@ const EditPostForm = () => {
   const editedPostContent = useSelector((state) => getPostById(state, id));
 
   const handleSubmit = (post) => {
-    dispatch(editPost({ ...post, id }));
+    dispatch(editPost(post));
     navigate("/");
   };
 
@@ -24,12 +24,12 @@ const EditPostForm = () => {
   } else {
     return (
       <>
-        <AddPostForm
+        <PostForm
           action={handleSubmit}
           actionText={"Edit Post"}
           title={editedPostContent.title}
           author={editedPostContent.author}
-          publishedDate={(editedPostContent.publishedDate, "yyyy-mm-dd")}
+          publishedDate={editedPostContent.publishedDate}
           shortDescription={editedPostContent.shortDescription}
           content={editedPostContent.content}
           id={id}
